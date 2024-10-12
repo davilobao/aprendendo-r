@@ -60,3 +60,27 @@ u = rlnorm(1000)
   
   B = as.matrix(data.frame(x = c(1, 0), y = c(0, 1)))
   print(B)
+  
+  # extraindo elementos
+  A = matrix(c(1, 2, 3 , 4, 5, 6), nrow = 3, ncol = 2, byrow = TRUE)
+  print(A)
+  
+  R = matrix(c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), nrow = 4, ncol = 3, byrow = TRUE)
+  
+  # combinando matrizes
+  
+  A = matrix(c(1, 2, 3, 4), nrow = 10, ncol = 10)
+  B = matrix(c(5, 6, 7, 8), nrow = 10, ncol = 10)
+  
+  rbind(A,B)
+  cbind(A,B)  
+
+  # matriz diagonal
+  diag(nrow = 100, ncol = 100)
+  
+  # multiplicacao entre matrizes
+  A = matrix(c(1, 2, 3, 4, 5, 6), nrow = 3, ncol = 2, byrow = TRUE)
+  B = matrix(c(1, 2, 3, 4), nrow = 2, ncol = 2, byrow = TRUE)
+  
+  print(A %*% B)
+  print(B %*% A)
