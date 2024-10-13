@@ -84,3 +84,17 @@ u = rlnorm(1000)
   
   print(A %*% B)
   print(B %*% A)
+  print(t(A)) #transposicao de matriz = trocar linha por colunau
+  
+  
+# matriz inversa
+A = matrix(c(0, 2, 1, 0), nrow = 2, ncol = 2, byrow = TRUE)
+print(solve(A))
+solve(A) %*% A == diag(nrow = nrow(A), ncol = ncol(A))
+
+
+# decomposicao de matriz
+library(Matrix)
+A = matrix(c(1, 2, 2, 1), nrow = 2, byrow = TRUE)
+luA = lu(A)
+expand(luA)
