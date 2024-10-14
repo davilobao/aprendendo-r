@@ -92,7 +92,6 @@ A = matrix(c(0, 2, 1, 0), nrow = 2, ncol = 2, byrow = TRUE)
 print(solve(A))
 solve(A) %*% A == diag(nrow = nrow(A), ncol = ncol(A))
 
-
 # decomposicao de matriz
 library(Matrix)
 A = matrix(c(1, 2, 2, 1), nrow = 2, byrow = TRUE)
