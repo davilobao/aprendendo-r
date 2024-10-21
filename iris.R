@@ -50,4 +50,4 @@ pairs(species~., data = dados, col = dados$species)
 
 
 # criando um grafico de dispersao separado por classes
-
+install.packages("caret")
